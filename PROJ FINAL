@@ -32,10 +32,10 @@ void loop() {
   valor = analogRead(leitura); //faz a leitura de temperatura e guarda o valor 
   linha++; //incrementa a linha do excel para que a leitura pule de linha
   Serial.print("DATA, TIME,"); //inicia a impressao dos dados
-  Serial.print(leitura); //estava valor
+  Serial.print(leitura); 
   Serial.print(",");
   
-  if (linha>100){ //laço para limitar a quantidade de dados
+  if (linha>200){ //laço para limitar a quantidade de dados
     linha=0;
     Serial.println("ROW, SET, 2"); //alimentação das linhas com os dados sempre iniciando
       }
