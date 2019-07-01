@@ -33,7 +33,7 @@ void loop() {
   linha++; //incrementa a linha do excel para que a leitura pule de linha
   Serial.print("DATA, TIME,"); //inicia a impressao dos dados
   Serial.print(leitura); 
-  Serial.print(",");
+  Serial.print(","); //separar os dados
   
   if (linha>200){ //laço para limitar a quantidade de dados
     linha=0;
